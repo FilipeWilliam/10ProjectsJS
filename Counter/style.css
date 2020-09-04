@@ -1,0 +1,27 @@
+body {
+  background-color: #FC4243;
+}
+
+div {
+  border: solid #FFF;
+  text-align: center;
+  margin: 100px;
+}
+
+p {
+  font-size: 30px;
+  color: #FFF;
+  font-weight: bold;
+}
+
+.button {
+  border-radius: 50%;
+  background-color: #FC4243;
+  border: solid #FFF;
+  color: #FFF;
+  padding: 0 7px;
+  margin-left: 10px;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+}

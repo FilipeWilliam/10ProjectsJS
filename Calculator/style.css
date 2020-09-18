@@ -7,12 +7,35 @@ body {
   background-color: #FB4446;
 }
 
+.calculator {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .button {
   width: 50px;
   height: 50px;
   font-size: 25px;
   font-weight: bold;
-  background-color: ;
+  background-color: #4B1415;
+  border: solid #4B1415;
+  color: #FFF;
+  cursor: pointer;
+}
+
+#equal {
+  height: 102px;
+}
+
+#num0 {
+  width: 102px;
+}
+
+.button:hover {
+  background-color: #000;
+  border: solid #000;
 }
 
 .result {

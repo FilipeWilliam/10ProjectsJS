@@ -23,6 +23,7 @@ body {
   border: solid #4B1415;
   color: #FFF;
   cursor: pointer;
+  outline: none;
 }
 
 #equal {

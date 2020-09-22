@@ -10,7 +10,6 @@ const dotButton = document.getElementById('dot');
 
 //Result
 const resultSpace = document.querySelector('.result');
-console.log(resultSpace);
 
 //Numbers
 const num0 = document.getElementById('num0');
@@ -23,3 +22,32 @@ const num6 = document.getElementById('num6');
 const num7 = document.getElementById('num7');
 const num8 = document.getElementById('num8');
 const num9 = document.getElementById('num9');
+
+//Read the button
+//PlusButton
+function plusOperation() {
+  let firstNumber = resultSpace.value;
+  console.log(firstNumber);
+}
+plusButton.addEventListener('click', plusOperation)
+
+//EqualButton
+function equalOperation() {
+  let result = resultSpace.value + firstNumber;
+  resultSpace.value = result;
+}
+equalButton.addEventListener('click', equalOperation)
+
+
+//Print Numbers
+function addZero() {
+  resultSpace.value = num0.value
+}
+
+num0.addEventListener('click', addZero)
+
+function addOne() {
+  resultSpace.value = num1.value
+}
+
+num1.addEventListener('click', addOne)

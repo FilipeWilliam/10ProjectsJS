@@ -8,6 +8,10 @@ const plusButton = document.getElementById('plus');
 const equalButton = document.getElementById('equal');
 const dotButton = document.getElementById('dot');
 
+//Result
+const resultSpace = document.querySelector('.result');
+console.log(resultSpace);
+
 //Numbers
 const num0 = document.getElementById('num0');
 const num1 = document.getElementById('num1');

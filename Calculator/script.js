@@ -36,6 +36,11 @@ function printNumber(num) {
   resultSpace.value = resultSpace.value + num;
 }
 
+function equal() {
+  resultSpace.value = eval(resultSpace.value);
+}
+
 //Active Functions
 clearButton.addEventListener("click", cleanResultSpace);
 backspaceButton.addEventListener('click', backspace);
+equalButton.addEventListener('click', equal)

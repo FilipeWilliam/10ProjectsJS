@@ -1,57 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Calculator</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
 
-  <body>
-    <div class="calculator">
-      <div>
-        <input class="result" />
-      </div>
-      <table class="buttons">
-        <tr>
-          <td><input type="button" class="button" id="clear" value="C" /></td>
-          <td>
-            <input type="button" class="button" id="backspace" value="◀" />
-          </td>
-          <td><input type="button" class="button" id="divide" value="/" /></td>
-          <td>
-            <input type="button" class="button" id="multiplication" value="X" />
-          </td>
-        </tr>
-        <tr>
-          <td><input type="button" class="button" id="num7" value="7" /></td>
-          <td><input type="button" class="button" id="num8" value="8" /></td>
-          <td><input type="button" class="button" id="num9" value="9" /></td>
-          <td><input type="button" class="button" id="minus" value="-" /></td>
-        </tr>
-        <tr>
-          <td><input type="button" class="button" id="num4" value="4" /></td>
-          <td><input type="button" class="button" id="num5" value="5" /></td>
-          <td><input type="button" class="button" id="num6" value="6" /></td>
-          <td><input type="button" class="button" id="plus" value="+" /></td>
-        </tr>
-        <tr>
-          <td><input type="button" class="button" id="num1" value="1" /></td>
-          <td><input type="button" class="button" id="num2" value="2" /></td>
-          <td><input type="button" class="button" id="num3" value="3" /></td>
-          <td rowspan="2">
-            <input type="button" class="button" id="equal" value="=" />
-          </td>
-        </tr>
-        <tr>
-          <td colspan="2">
-            <input type="button" class="button" id="num0" value="0" />
-          </td>
-          <td><input type="button" class="button" id="dot" value="." /></td>
-        </tr>
-      </table>
-    </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-    <script src="script.js"></script>
-  </body>
+<body>
+  <div class="calculator">
+    <form name="form">
+      <input class="result" name="textview" />
+    </form>
+    <table class="buttons">
+      <tr>
+        <td><input type="button" class="button" id="clear" value="C" /></td>
+        <td>
+          <input type="button" class="button" id="backspace" value="◀" />
+        </td>
+        <td><input type="button" class="button" id="divide" value="/" /></td>
+        <td>
+          <input type="button" class="button" id="multiplication" value="X" />
+        </td>
+      </tr>
+      <tr>
+        <td><input type="button" class="button" id="num7" value="7" /></td>
+        <td><input type="button" class="button" id="num8" value="8" /></td>
+        <td><input type="button" class="button" id="num9" value="9" /></td>
+        <td><input type="button" class="button" id="minus" value="-" /></td>
+      </tr>
+      <tr>
+        <td><input type="button" class="button" id="num4" value="4" /></td>
+        <td><input type="button" class="button" id="num5" value="5" /></td>
+        <td><input type="button" class="button" id="num6" value="6" /></td>
+        <td><input type="button" class="button" id="plus" value="+" /></td>
+      </tr>
+      <tr>
+        <td><input type="button" class="button" id="num1" value="1" /></td>
+        <td><input type="button" class="button" id="num2" value="2" /></td>
+        <td><input type="button" class="button" id="num3" value="3" /></td>
+        <td rowspan="2">
+          <input type="button" class="button" id="equal" value="=" />
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <input type="button" class="button" id="num0" value="0" />
+        </td>
+        <td><input type="button" class="button" id="dot" value="." /></td>
+      </tr>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
 </html>

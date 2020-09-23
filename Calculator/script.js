@@ -28,9 +28,14 @@ function cleanResultSpace() {
   resultSpace.value = "";
 }
 
+function backspace() {
+  resultSpace.value = (resultSpace.value).slice(0, resultSpace.value.length - 1);
+}
+
 function printNumber(num) {
   resultSpace.value = resultSpace.value + num;
 }
 
 //Active Functions
 clearButton.addEventListener("click", cleanResultSpace);
+backspaceButton.addEventListener('click', backspace);

@@ -24,9 +24,12 @@ const num8 = document.getElementById("num8");
 const num9 = document.getElementById("num9");
 
 //Functions
-
 function cleanResultSpace() {
   resultSpace.value = "";
+}
+
+function printNumber(num) {
+  resultSpace.value = resultSpace.value + num;
 }
 
 //Active Functions

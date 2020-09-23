@@ -23,7 +23,11 @@ const num7 = document.getElementById("num7");
 const num8 = document.getElementById("num8");
 const num9 = document.getElementById("num9");
 
-//Function
-function printNumber(num) {
-  resultSpace.value = resultSpace.value + num;
+//Functions
+
+function cleanResultSpace() {
+  resultSpace.value = "";
 }
+
+//Active Functions
+clearButton.addEventListener("click", cleanResultSpace);

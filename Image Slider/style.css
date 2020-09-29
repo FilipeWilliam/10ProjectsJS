@@ -9,8 +9,10 @@ body {
 }
 
 .slide-container {
+  border: solid 1px #FFF;
   width: 15.3%;
   margin: auto;
+  overflow: hidden;
 }
 
 .slide-div {
@@ -18,5 +20,24 @@ body {
   display: flex;
   width: 100%;
   height: 200px;
-  overflow: hidden;
+}
+
+#prev {
+  position: absolute;
+  top: 14%;
+  z-index: 10;
+  left: 40%;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+#next {
+  position: absolute;
+  top: 14%;
+  z-index: 10;
+  right: 40%;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
 }

@@ -27,3 +27,15 @@ function prevImage() {
 
 nextButton.addEventListener('click', nextImage);
 prevButton.addEventListener('click', prevImage);
+
+//Stop the movement
+function repeatMovement() {
+  console.log(slidesImg[i]);
+  if (slidesImg[i].id === 'yellow') {
+    slidesDiv.style.transition = 'none';
+    i = slidesImg.length - 2;
+    slidesDiv.style.transform = 'translateX(' + (-size * i) + "px)";
+  }
+};
+
+slidesDiv.addEventListener('transitionend', repeatMovement);

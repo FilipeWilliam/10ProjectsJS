@@ -31,7 +31,6 @@ prevButton.addEventListener('click', prevImage);
 
 //Stop the movement
 function repeatMovement() {
-  console.log(i);
   if (slidesImg[i].id === 'yellow') {
     slidesDiv.style.transition = 'none';
     i = slidesImg.length - 2;

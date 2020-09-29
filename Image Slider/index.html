@@ -5,11 +5,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Image Slider</title>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <div class="slide-container">
+    <i class="fas fa-angle-right" id="next"></i>
+    <i class="fas fa-angle-left" id="prev"></i>
     <div class="slide-div">
       <img src="yellow.png" id="yellow" alt="yellow">
       <img src="purple.png" alt="purple">
@@ -19,9 +23,6 @@
       <img src="purple.png" id="purple" alt="purple">
     </div>
   </div>
-
-  <button id="prev">Prev</button>
-  <button id="next">Next</button>
 
   <script src="script.js"></script>
 </body>

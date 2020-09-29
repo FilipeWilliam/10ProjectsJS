@@ -9,8 +9,10 @@ body {
 }
 
 .slide-container {
+  border: solid 1px #FFF;
   width: 15.3%;
   margin: auto;
+  overflow: hidden;
 }
 
 .slide-div {

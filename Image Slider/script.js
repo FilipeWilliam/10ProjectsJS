@@ -9,17 +9,18 @@ const nextButton = document.querySelector('#next');
 //Movement
 let i = 1;
 const size = slidesImg[0].clientWidth;
-
 slidesDiv.style.transform = 'translateX(' + (-size * i) + 'px)';
 
 //Buttons function
 function nextImage() {
+  if (i >= slidesImg.length - 1) return;
   slidesDiv.style.transition = 'transform 0.4s ease-in-out';
   i++;
   slidesDiv.style.transform = 'translateX(' + (-size * i) + "px)";
 };
 
 function prevImage() {
+  if (i <= 0) return;
   slidesDiv.style.transition = 'transform 0.4s ease-in-out';
   i--;
   slidesDiv.style.transform = 'translateX(' + (-size * i) + "px)";
